@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Orders</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding *ngIf="orders">
+  <ion-list>
+    <ion-item *ngFor="let item of orders.orders" (click)="gotoProductDetails(item)" >
+        <ion-thumbnail slot="start">
+          <ion-img [src]="item.product.picture"></ion-img>
+        </ion-thumbnail>
+        <ion-label>{{item.product.name}}</ion-label>
+        <ion-label>{{item.product.price}}</ion-label>
+      </ion-item>
+  </ion-list>
+</ion-content>
