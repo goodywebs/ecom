@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NavController } from '@ionic/angular';
-import { ProductsService } from '../api/products.service';
+import { ProductsService } from '@app/api/products.service';
 
 @Component({
   selector: 'app-order-details',

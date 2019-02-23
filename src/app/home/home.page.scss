@@ -2,3 +2,21 @@
   max-height: 35vh;
   overflow: hidden;
 }
+.img-fluid {
+  max-width: 60%;
+  width: 60%;
+  min-width: 400px;
+  height: auto;
+  margin: 0 auto;
+}
+.img-responsive{
+  background-image: url('https://www.apple.com/v/ipad/home/an/images/overview/ipad_pro_hero__tazkzdo0z8iu_large.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  }
+  .img{
+    width: 100% !important;
+height: auto !important;
+}
+ 
